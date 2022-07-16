@@ -1,7 +1,5 @@
 '***Comandos VBScript focado em automatização de Excel para RPA***'
-'Obs: Tudo que estiver dentro do asterisco (*) deverá ser substuido'
 ---------------------------------------------------------------------------------------------------------------------
-
 'Cria uma função para servir como parametro de enterada:
 function Inserir nome da função(Inserir nome do parametro)
 on error resume next
