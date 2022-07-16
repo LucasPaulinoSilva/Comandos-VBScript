@@ -157,7 +157,8 @@ end if
 if Weekday(D) <> 6 Then
 	D = D+1
 end if
-
+				
+'Abre caixa de mensagem
 msgbox D
 
 'Verifica a existência de erro e retorna:
