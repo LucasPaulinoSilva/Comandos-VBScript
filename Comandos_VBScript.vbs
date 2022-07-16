@@ -1,6 +1,6 @@
 '***Comandos VBScript focado em automatização de Excel para RPA***'
 ---------------------------------------------------------------------------------------------------------------------
-'Cria uma função para servir como parametro de enterada:
+'Cria uma função para servir como parametro de entrada:
 function Inserir nome da função(Inserir nome do parametro)
 on error resume next
 
