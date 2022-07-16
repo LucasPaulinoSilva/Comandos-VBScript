@@ -1,4 +1,4 @@
-'***Comandos VBScript focado em automatização de Excel par RPA***'
+'***Comandos VBScript focado em automatização de Excel para RPA***'
 'Obs: Tudo que estiver dentro do asterisco (*) deverá ser substuido'
 ---------------------------------------------------------------------------------------------------------------------
 
