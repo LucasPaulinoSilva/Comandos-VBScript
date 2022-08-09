@@ -129,9 +129,12 @@ WScript.Sleep 1000
 
 'Salva o arquivo Excel:
 excelworkbook.save 
+				
+'Fecha arquivo excel
+excel.quit
 
-'Fecha Excel:
-excelworkbook.close
+'Fecha planilha (aba) Excel:
+excelworkbook.close true or false 'para fechar salvando ou não a planilha
 
 'Verifica se o dia escolhi é útil (Ex: Quinto dia):
 Dim s
