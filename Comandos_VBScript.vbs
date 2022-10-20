@@ -100,7 +100,7 @@ aba.range("A2:B"&ultimalinha).NumberFormat = "_($* #,##0.00_);_($* (#,##0.00);_(
 aba.Columns("A").Insert
 aba.range("A1").Value = "Inserir nome da coluna"
 					
-'Expande colunas 					
+'Expande colunas: 					
 for col=1 to 5 '(Inserir a quantidade de colunas a ser expandidas)
 aba.columns(col).Autofit()
 next
