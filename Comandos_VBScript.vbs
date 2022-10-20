@@ -1,4 +1,4 @@
-'***Comandos VBScript focado em automatização de Excel para RPA***'
+'***Comandos VBScript focado em automatização Excel para RPA***'
 ---------------------------------------------------------------------------------------------------------------------
 'Cria uma função para servir como parametro de entrada:
 function Inserir nome da função(Inserir nome do parametro)
@@ -99,6 +99,11 @@ aba.range("A2:B"&ultimalinha).NumberFormat = "_($* #,##0.00_);_($* (#,##0.00);_(
 'Cria uma nova coluna:
 aba.Columns("A").Insert
 aba.range("A1").Value = "Inserir nome da coluna"
+					
+'Expande colunas 					
+for col=1 to 5 '(Inserir a quantidade de colunas a ser expandidas)
+aba.columns(col).Autofit()
+next
 
 'Converte xlsx em csv delimitado por vírgula:
 excelworkbook.SaveAs Replace(excelworkbook.FullName), ".xlsx", ".csv", 6
@@ -164,7 +169,7 @@ end if
 'Abre caixa de mensagem
 msgbox D
 
-'Verifica a existência de erro e retorna:
+'Verifica a existência de erro para retorna-lo:
 If Erro.Number <> 0 Then
     Dim res
     res = "ERRO, número do erro:" & CStr(Erro.Number) & ", Descrição do erro:" & CStr(Erro.Description)
